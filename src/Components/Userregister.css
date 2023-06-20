@@ -1,0 +1,545 @@
+.usercontainer{
+
+    position: relative;
+    display: flex;
+    margin-left: 20%;
+    font-family: 'poppins',sans-serif;
+ }
+.Usersignuppage{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    background-color:#fff;
+    width: 75vh;
+    height: 100vh; 
+    line-height: 4px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.Usersignuppage::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 100vh;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.Usersignuppage::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 100vh;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.Usersignuppage form{
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(to bottom left,rgba(217,26,93,255),rgb(89,38,100),rgb(15,42,87));
+    padding: 30px 70px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction:column;
+}
+.Usersignuppage form h2{
+    color: #fff;
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+.Usersignuppage form .userinputbox{
+    position: relative;
+    width:350px;
+    height: 420px;
+}
+
+.Usersignuppage form .userinputbox input{
+    /* position: relative; 
+    width: 100%;
+    padding: 30px 0px 20px;
+    background: transparent;
+    outline: none;
+    border:none;
+    box-shadow: none;
+    color:white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10; */
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40PX;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    background:transparent;
+    color: #fff;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    z-index: 10;
+    padding-left: 10px;
+}
+.Usersignuppage form .userinputbox span{
+    position: absolute;
+    left: 0;
+    padding-top: 15px;
+    padding-left: 3px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.Usersignuppage form .userinputbox input:valid ~ span,
+.Usersignuppage form .userinputbox input:focus ~ span
+{
+    color:white;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.Usersignuppage form .userinputbox i
+{
+    position:absolute;
+    margin-bottom: 36px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:#fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.Usersignuppage form .userinputbox input:valid ~ i,
+.Usersignuppage form .userinputbox input:focus ~ i
+{
+    height: 4px;
+}
+.userregister {
+    margin: 10px 0;
+    font-size: 13.5px;
+    color: #8f8f8f;
+   
+}
+.Usersignuppage form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    width: 100px;
+    margin-top: 10px;
+}
+.Usersignuppage form input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+.userregister{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 13.5px;
+}
+.userradio{
+    display: flex;
+    
+}
+label{
+   
+    left: 0px;
+    padding-right: 13px;
+    color: white;
+    line-height: 20px;
+}
+.usermain{
+    display: flex;
+    width:100%;
+    height: 100%;
+    background:transparent;
+}
+.usermain img{
+    margin-top: 10%;
+    margin-left: 10%;
+    width:30%;
+    height: 30%;
+}
+/* fogetpaswordUser.................................................................................... */
+.Userforgetcontainer{
+    position: relative;
+    display: flex;
+    margin-left: 33%;
+    margin-top: 15%;
+    font-family: 'poppins',sans-serif;
+ }
+.forget{
+    position: relative;
+    display: flex;
+    background-color:#fff;
+    width: 75vh;
+    height: 320px;
+    line-height: 2px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.forget::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 75vh;
+    height: 350px;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.forget::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 65vh;
+    height: 320px;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.forget form{
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(to bottom left,rgba(217,26,93,255),rgb(89,38,100),rgb(15,42,87));
+    padding: 30px 70px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction:column;
+}
+.forget form h2{
+    color: #fff;
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.forget form .Userforgetinputbox{
+    position: relative;
+    width:350px;
+    height: 50px;
+}
+.forget form .Userforgetinputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 0px  10px;
+    background: transparent;
+    outline: none;
+    border:none;
+    box-shadow: none;
+    color:white; 
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.forget form .Userforgetinputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 20px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.forget form .Userforgetinputbox input:valid ~ span,
+.forget form .Userforgetinputbox input:focus ~ span
+{
+    color:white;
+    font-size: 0.75em;
+    transform: translateY(-20px);
+}
+.forget form .Userforgetinputbox i
+{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:#fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.forget form .Userforgetinputbox input:valid ~ i,
+.forget form .Userforgetinputbox input:focus ~ i
+{
+    height: 3px;
+}
+.forgetsubmit{
+    margin: 20px 0;
+    font-size: 13.5px;
+    color: #8f8f8f;
+}
+.forget form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 4px;
+    width: 100px;
+    margin-top: 10px;
+}
+.forget form input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+.forgetsubmit{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 13.5px;
+    
+}
+.usernavigate{
+    display: flex;
+    justify-content:center;
+}
+.userfogetnew{
+    font-size: 12.0px;
+    color: #8f8f8f;
+}
+.forget form text{
+    position: relative;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 12%;
+    font-size: 13px;
+}
+.userforget{
+    padding-top: 20px;
+    position:relative;
+    text-decoration: none;
+    color: #8f8f8f ;
+    cursor: pointer;
+}
+.userforget:hover{
+    color:rgb(15, 131, 246);
+} 
+/* new password........................................................................................... */
+.Usernewpasswordcontainer{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 20vh;
+    font-family: 'poppins',sans-serif;
+ }
+.newpassword{
+    display: flex;
+    background-color:#fff;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.newpassword::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.newpassword::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238),rgb(21, 144, 238));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.newpassword form{
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(to bottom left,rgba(217,26,93,255),rgb(89,38,100),rgb(15,42,87));
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.newpassword form h2{
+    color: #fff;
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.newpassword form .Usernewpasswordinputbox{
+    position: relative;
+    width:300px;
+    margin-top: 35px;
+}
+.newpassword form .Usernewpasswordinputbox input{
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30PX;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    background:transparent;
+    color: #fff;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    z-index: 10;
+    padding-left: 10px;
+    
+}
+.newpassword form .Usernewpasswordinputbox span{
+    position: absolute;
+    left: 0;
+    padding-top: 6px;
+    padding-left: 3px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.newpassword form .Usernewpasswordinputbox input:valid ~ span,
+.newpassword form .Usernewpasswordinputbox input:focus ~ span
+{
+    color:white; 
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.newpassword form .Usernewpasswordinputbox i
+{
+    position:absolute ;
+    margin-bottom: 29px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:#fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+} 
+.newpassword form .Usernewpasswordinputbox input:valid ~ i,
+.newpassword form .Usernewpasswordinputbox input:focus ~ i
+{
+    height: 4px;
+}
+.newpassword form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+     background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    width: 100px;
+    margin-top: 10px;
+}
+.newpassword form input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+
+.newpassword form text{
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-left: 19%;
+    font-size: 13px;
+}
+.newpaswordsubmit{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 13.5px;
+    
+}
+.usernewpasswordnavigate{
+    display: flex;
+    justify-content:center;
+}
+.usersignupnew{
+    font-size: 12.0px;
+    color: #8f8f8f;
+}
+.usernew{
+    padding-top: 20px;
+    position:relative;
+    text-decoration: none;
+    color: #8f8f8f ;
+    cursor: pointer;
+}
+.usernew:hover{
+    color:rgb(15, 131, 246);
+} 
